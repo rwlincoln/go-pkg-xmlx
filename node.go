@@ -513,7 +513,7 @@ func (this *Node) printComment() []byte {
 }
 
 func (this *Node) printDirective() []byte {
-	return []byte("<!" + this.Value + "!>")
+	return []byte("<!" + this.Value + ">")
 }
 
 func (this *Node) printText() []byte {
